@@ -50,7 +50,3 @@ The Control D dashboard (**Statistics → All Profiles**) shows:
 - **Encrypted DNS %** — should read 100% once everything's routed through DoT
 - **Home Country Traffic %** — a rough anomaly check; a sudden dip can mean a device is resolving somewhere unexpected
 - **Endpoints list** — per-device breakdown, including devices connecting from outside the home network
-
-## Nothing Sensitive Here
-
-Screenshots use generic device names (`phone-1`, `laptop-1`) and no real resolver ID. If you're setting this up yourself, keep your own resolver ID and any real device names out of anything you make public.
