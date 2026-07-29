@@ -54,7 +54,3 @@ The main enforcement point here is the `WAN-Input` chain — that's where inboun
 ## What "Normal" Looks Like
 
 Worth checking your invalid-conntrack packet count once things settle — packets that don't match a known connection state. On a stable single-WAN setup, this typically sits around 0.4% of total traffic, which is just background WAN noise (scans, stray retransmits, that kind of thing) rather than a problem. Worth noting the number now, because it's the kind of thing that can look "off" later just from a topology change (like adding a second WAN link) rather than an actual issue — the ratio matters more than the raw count.
-
-## Nothing Sensitive Here
-
-No real IPs, device names, or router admin details in any of this — just the feed names, chain names, and commands, which are the same for anyone running banIP.
