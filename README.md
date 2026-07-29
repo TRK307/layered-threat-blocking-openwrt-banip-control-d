@@ -8,7 +8,10 @@ This is a look at something I set up on my home network not a polished product, 
 
 The short version: DNS filtering catches bad stuff before a connection is even attempted, and firewall-level IP blocking catches whatever slips past that. Running both together covers more ground than either one alone.
 
+BanIP Status
 ![banIP status](banip/images/BanIP.png)
+
+Control D Dashboard
 ![Control D dashboard](control-d/images/control%20d%20dns.png)
 
 Related bits from the same homelab, if you're curious:
