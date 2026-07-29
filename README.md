@@ -3,7 +3,7 @@
 IP-reputation blocking at the firewall (banIP) plus Encrypted DNS filtering (Control D), running together on an OpenWrt Router, fw4/nftables.
 
 
-![Control D dashboard](control-d/images/control d dns.png)
+![Control D dashboard](control-d/images/control%20d%20dns.png)
 
 ## Hi There 👋
 
