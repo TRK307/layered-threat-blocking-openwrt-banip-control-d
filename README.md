@@ -4,15 +4,15 @@ IP-reputation blocking at the firewall (banIP) plus Encrypted DNS filtering (Con
 
 ## Hi There 👋
 
-This is a look at something I set up on my home network not a polished product, just me documenting what I did in case it's useful to someone else poking around their own OpenWrt router. Feel free to have a look, borrow whatever's useful, or just enjoy the read.
+This is a look at something I set up on my home network - not a polished product, just me documenting what I did in case it's useful to someone else poking around their own OpenWrt router. Feel free to have a look, borrow whatever's useful, or just enjoy the read.
 
 The short version: DNS filtering catches bad stuff before a connection is even attempted, and firewall-level IP blocking catches whatever slips past that. Running both together covers more ground than either one alone.
 
-BanIP Status
+### BanIP Status
 
 ![banIP status](banip/images/BanIP.png)
 
-Control D Dashboard
+### Control D Dashboard
 
 ![Control D dashboard](control-d/images/control%20d%20dns.png)
 
