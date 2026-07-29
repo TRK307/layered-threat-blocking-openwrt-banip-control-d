@@ -2,15 +2,15 @@
 
 IP-reputation blocking at the firewall (banIP) plus Encrypted DNS filtering (Control D), running together on an OpenWrt Router, fw4/nftables.
 
-## Hey 👋
+## Hi There 👋
 
 This is a look at something I set up on my home network — not a polished product, just me documenting what I did in case it's useful to someone else poking around their own OpenWrt router. Feel free to have a look, borrow whatever's useful, or just enjoy the read.
 
 The short version: DNS filtering catches bad stuff before a connection is even attempted, and firewall-level IP blocking catches whatever slips past that. Running both together covers more ground than either one alone.
 
 Related bits from the same homelab, if you're curious:
-- 🔗 SQM/CAKE Bufferbloat Fix — *(link here)*
-- 🔗 Real-Time Network Monitoring Dashboard — *(link here)*
+- 🔗 SQM/CAKE Bufferbloat Fix — [*(link here)*](https://github.com/TRK307/LTE-Bufferbloat-Fix)
+- 🔗 Real-Time Network Monitoring Dashboard — [*(link here)*](https://github.com/TRK307/Network-Monitor-App-with-Python/blob/main/README.md)
 
 ## What's Actually Happening Here
 
@@ -52,16 +52,4 @@ Honestly, the DNS side was the more satisfying win — Control D's dashboard sho
 - [`control-d/`](./control-d/README.md) — encrypted DNS setup, router + endpoint devices
 - [`banip/`](./banip/README.md) — IP-reputation blocking setup on the firewall
 
-## A Note on My Setup
 
-Screenshots in here come from a GL.iNet travel router, which happens to have Control D built in as a selectable DNS provider — no manual config needed on that side, just a dropdown. Everything else (banIP, fw4/nftables) is standard OpenWrt and applies regardless of which router you're running. Where the GL.iNet UI differs from stock OpenWrt/LuCI, I've called it out.
-
-## Nothing Sensitive In Here
-
-Screenshots and examples use generic device names (`phone-1`, `laptop-1`, etc.) and placeholder IDs — no real device names, resolver IDs, IPs, or keys from my actual setup.
-
-## What's Next
-
-- [ ] Cross-reference Control D block logs with banIP block logs for one combined view
-- [ ] Add Suricata into the mix and see how it plays with the existing setup
-- [ ] Re-check the invalid-conntrack baseline once a dual-WAN setup is in place
