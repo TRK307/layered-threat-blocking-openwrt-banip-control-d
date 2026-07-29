@@ -1,15 +1,15 @@
 # layered-threat-blocking-openwrt-banip-control-d
 
-IP-reputation blocking at the firewall (banIP) plus Encrypted DNS filtering (Control D), running together on an OpenWrt Router, fw4/nftables.
-
-![banIP status](banip/images/banip.png)
-![Control D dashboard](control-d/images/control%20d%20dns.png)
+IP-reputation blocking at the firewall (banIP) plus Encrypted DNS filtering (Control D), running together on an OpenWrt Router (gl.inet router in my case), fw4/nftables.
 
 ## Hi There 👋
 
-This is a look at something I set up on my home network — not a polished product, just me documenting what I did in case it's useful to someone else poking around their own OpenWrt router. Feel free to have a look, borrow whatever's useful, or just enjoy the read.
+This is a look at something I set up on my home network not a polished product, just me documenting what I did in case it's useful to someone else poking around their own OpenWrt router. Feel free to have a look, borrow whatever's useful, or just enjoy the read.
 
 The short version: DNS filtering catches bad stuff before a connection is even attempted, and firewall-level IP blocking catches whatever slips past that. Running both together covers more ground than either one alone.
+
+![banIP status](banip/images/banip.png)
+![Control D dashboard](control-d/images/control%20d%20dns.png)
 
 Related bits from the same homelab, if you're curious:
 - 🔗 SQM/CAKE Bufferbloat Fix — [*(link here)*](https://github.com/TRK307/LTE-Bufferbloat-Fix)
