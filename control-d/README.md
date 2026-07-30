@@ -1,10 +1,10 @@
-# Control D — Encrypted DNS Filtering
+# Control D Encrypted DNS Filtering
 
 Setting up DNS over TLS (DoT) with [Control D](https://controld.com/) on an OpenWrt Router, plus a couple of endpoint devices so filtering follows them off the home network.
 
 ## Why Bother
 
-Regular DNS is plaintext — anyone watching the network path can see every domain your devices resolve, even if the actual web traffic itself is encrypted. Moving DNS to DoT closes that gap, and using Control D on top means you also get category/threat filtering at the resolver, before a connection is even attempted.
+Regular DNS is plaintext. Anyone watching the network path can see every domain your devices resolve, even if the actual web traffic itself is encrypted. Moving DNS to DoT closes that gap, and using Control D on top means you also get category/threat filtering at the resolver, before a connection is even attempted.
 
 ## Router Setup (Generic OpenWrt via CLI)
 
@@ -25,7 +25,7 @@ Then:
 service https-dns-proxy restart
 ```
 
-5. Confirm it's working — from the router:
+5. Confirm it's working from the router:
 
 ```sh
 nslookup example.com 127.0.0.1
@@ -35,13 +35,13 @@ nslookup example.com 127.0.0.1
 
 ## Endpoint Devices (Brief, Non-Technical)
 
-A few of my devices run their own Control D setup directly, so filtering keeps working even when they're off the home network — mobile data, coffee shop Wi-Fi, wherever.
+A few of my devices run their own Control D setup directly, so filtering keeps working even when they're off the home network and using mobile data, coffee shop Wi-Fi, wherever.
 
 - **Windows:** DNS-over-TLS/DoQ - <resolverid>.dns.controld.com
 - **Android:** DNS-over-TLS/DoQ - <resolverid>.dns.controld.com
 - **iOS:** DNS-over-TLS/DoQ - <resolverid>.dns.controld.com
 
-Nothing more technical than that — the app handles the rest.
+Nothing more technical than that, just adding the resolver id in the correct settings menu (e.g. Private DNS settings on Android > enter resolver id)
 
 ## Keeping an Eye on It
 
