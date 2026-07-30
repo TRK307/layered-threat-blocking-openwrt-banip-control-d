@@ -45,7 +45,7 @@ Related bits from the same homelab, if you're curious:
 
 ## The Wins
 
-✅ DNS queries used to be plaintext — anything watching the network could see every domain resolved. Fixed with DNS over TLS (DoT) via Control D, both on the router and on individual devices.
+✅ DNS queries used to be plaintext. Anything watching the network could see every domain resolved. Fixed with DNS over TLS (DoT) via Control D, both on the router and on individual devices.
 
 ✅ Router-only filtering stopped working the second a device left the house. Fixed by giving key devices their own Control D setup, so filtering follows them wherever they connect.
 
@@ -53,7 +53,7 @@ Related bits from the same homelab, if you're curious:
 
 ✅ Used to have no idea if "weird" traffic numbers were actually weird. Now there's a baseline (~0.4% invalid-conntrack traffic) to compare against later, which matters once a dual-WAN setup enters the picture.
 
-Honestly, the DNS side was the more satisfying win — Control D's dashboard shows blocked vs. bypassed traffic in real time, so the payoff is immediate. The firewall side is quieter but catches a different kind of problem entirely, which is why both are worth running side by side.
+Honestly, the DNS side was the more satisfying win. Control D's dashboard shows blocked vs. bypassed traffic in real time, so the payoff is immediate. The firewall side is quieter but catches a different kind of problem entirely, which is why both are worth running side by side.
 
 ## Guides
 
