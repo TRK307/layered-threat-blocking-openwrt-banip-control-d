@@ -1,4 +1,4 @@
-# banIP: IP-Reputation Blocking at the Firewall
+# banIP (IP-Reputation Blocking at the Firewall)
 
 Blocking traffic to/from known-bad IPs on an OpenWrt Router, using [banIP](https://github.com/openwrt/packages/tree/master/net/banip) and fw4/nftables.
 
