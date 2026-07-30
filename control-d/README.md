@@ -31,15 +31,15 @@ service https-dns-proxy restart
 nslookup example.com 127.0.0.1
 ```
 
-> **My own setup:** I'm running a GL.iNet travel router, which already has Control D built in as a selectable option under `Network → DNS` — no manual proxy package needed. I just chose "Encrypted DNS" → "DNS over TLS" → "Control D" from the dropdown and pasted in my resolver ID. If your router has something similar, it'll save you the CLI steps above.
+> **My own setup:** I'm running a GL.iNet router, which already has Control D (Firmware v4.8.3) built in as a selectable option under `Network → DNS` — no manual proxy package needed. I just chose "Encrypted DNS" → "DNS over TLS" → "Control D" from the dropdown and pasted in my resolver ID. If your router has something similar, it'll save you the CLI steps above.
 
 ## Endpoint Devices (Brief, Non-Technical)
 
 A few of my devices run their own Control D setup directly, so filtering keeps working even when they're off the home network — mobile data, coffee shop Wi-Fi, wherever.
 
-- **Windows:** installed the Control D desktop app, signed in, picked a profile.
-- **Android:** installed the Control D app from the Play Store, granted the permission it asks for (it uses a local VPN-style connection to enforce DNS), picked a profile.
-- **iOS:** installed the Control D app from the App Store (there's also a manual DNS profile option in Settings if you'd rather skip the app), picked a profile.
+- **Windows:** DNS-over-TLS/DoQ - <resolverid>.dns.controld.com
+- **Android:** DNS-over-TLS/DoQ - <resolverid>.dns.controld.com
+- **iOS:** DNS-over-TLS/DoQ - <resolverid>.dns.controld.com
 
 Nothing more technical than that — the app handles the rest.
 
