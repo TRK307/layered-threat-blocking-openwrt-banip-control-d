@@ -1,4 +1,4 @@
-# banIP — IP-Reputation Blocking at the Firewall
+# banIP: IP-Reputation Blocking at the Firewall
 
 Blocking traffic to/from known-bad IPs on an OpenWrt Router, using [banIP](https://github.com/openwrt/packages/tree/master/net/banip) and fw4/nftables.
 
@@ -8,7 +8,7 @@ Control D handles DNS-layer filtering, but that only helps if a connection actua
 
 ## A Quick Note on fw4/nftables
 
-OpenWrt's firewall4 (fw4) manages rules in `table inet fw4`, using the `nft` command. There's also an older `table ip filter`, managed behind the scenes by an iptables-nft compatibility layer — that one's best left alone. Everything here targets `table inet fw4`.
+OpenWrt's firewall4 (fw4) manages rules in `table inet fw4`, using the `nft` command. There's also an older `table ip filter`, managed behind the scenes by an iptables-nft compatibility layer.
 
 ## Installing (CLI)
 
