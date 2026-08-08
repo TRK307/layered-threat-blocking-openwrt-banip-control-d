@@ -51,8 +51,6 @@ Related bits from the same homelab, if you're curious:
 
 ✅ DNS filtering alone still misses anything that skips DNS and hits an IP directly. That's exactly what banIP covers, using reputation feeds at the firewall (`dshieldv4`, `dropv4`, `blocklistv4`, `allowlistv4`).
 
-✅ Used to have no idea if "weird" traffic numbers were actually weird. Now there's a baseline (~0.4% invalid-conntrack traffic) to compare against later, which matters once a dual-WAN setup enters the picture.
-
 Honestly, the DNS side was the more satisfying win. Control D's dashboard shows blocked vs. bypassed traffic in real time, so the payoff is immediate. The firewall side is quieter but catches a different kind of problem entirely, which is why both are worth running side by side.
 
 ## Guides
